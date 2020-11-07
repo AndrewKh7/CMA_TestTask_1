@@ -18,7 +18,7 @@ public class Application {
         try {
             files = getTextFileListFrom(path, EXT);
         } catch (IOException e) {
-            System.out.println("Directory not found");
+            System.out.println((args.length != 0 ? args[0] : DEFAULT_TEST_FOLDER) + " directory not found");
             System.exit(1);
         }
 
